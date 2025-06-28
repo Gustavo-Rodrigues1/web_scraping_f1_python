@@ -1,0 +1,42 @@
+🏎️ CLASSIFICAÇÃO DE PILOTOS
+
+                  abreviação posição pontos
+nome                                       
+Oscar Piastri            PIA       1    198
+Lando Norris             NOR       2    176
+Max Verstappen           VER       3    155
+George Russell           RUS       4    136
+Charles Leclerc          LEC       5    104
+Lewis Hamilton           HAM       6     79
+Kimi Antonelli           ANT       7     63
+Alexander Albon          ALB       8     42
+Esteban Ocon             OCO       9     22
+Isack Hadjar             HAD      10     21
+Nico Hülkenberg          HUL      11     20
+Lance Stroll             STR      12     14
+Carlos Sainz             SAI      13     13
+Pierre Gasly             GAS      14     11
+Yuki Tsunoda             TSU      15     10
+Fernando Alonso          ALO      16      8
+Oliver Bearman           BEA      17      6
+Liam Lawson              LAW      18      4
+Gabriel Bortoleto        BOR      19      0
+Franco Colapinto         COL      20      0
+Jack Doohan              DOO      21      0
+
+==============================
+
+🏁 CLASSIFICAÇÃO DE EQUIPES
+
+             posição pontos
+equipe                     
+McLaren            1    374
+Mercedes           2    199
+Ferrari            3    183
+Red Bull           4    162
+Williams           5     55
+Haas               6     28
+Racing Bulls       7     28
+Aston Martin       8     22
+Sauber             9     20
+Alpine            10     11
