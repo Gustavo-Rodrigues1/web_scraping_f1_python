@@ -3,8 +3,9 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 import pandas as pd
-import time
 
 #Endereço da página de classificação da Fórmula 1
 url = "https://www.espn.com.br/f1/classificacao"
@@ -51,7 +52,9 @@ def webScraping (lines, tipo="piloto"):
             break
     return rank 
 #Espera a tabela estar completamente carregada
-time.sleep(2)
+WebDriverWait(driver, 10).until(
+    EC.presence_of_element_located((By.CSS_SELECTOR, "tr.Table__TR.Table__TR--sm.Table__even"))
+)
 
 racers_lines = driver.find_elements(By.CSS_SELECTOR, "tr.Table__TR.Table__TR--sm.Table__even")
 #salva o dicionário de pilotos em uma variável
@@ -64,8 +67,12 @@ df_pilotos.index.name = "nome"
 #Muda para a tabela de Construtores(equipes) da Formula 1
 driver.find_element(By.CSS_SELECTOR,'a.AnchorLink.Button--anchorLink[href*="constructores"]'
 ).click()
-#Espera a tabela estar completamente carregada
-time.sleep(2)
+#Espera a nova tabela estar completamente carregada
+primeiro_piloto = driver.find_element(By.CSS_SELECTOR, "tr.Table__TR.Table__TR--sm.Table__even").text
+WebDriverWait(driver, 10).until(
+    lambda d: d.find_element(By.CSS_SELECTOR, "tr.Table__TR.Table__TR--sm.Table__even").text != primeiro_piloto
+)
+
 
 #salva o dicionário de equipes em uma variável
 team_lines = driver.find_elements(By.CSS_SELECTOR, "tr.Table__TR.Table__TR--sm.Table__even")

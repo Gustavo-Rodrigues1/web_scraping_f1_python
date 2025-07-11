@@ -2,25 +2,25 @@
 
                   abreviação posição pontos
 nome                                       
-Oscar Piastri            PIA       1    198
-Lando Norris             NOR       2    176
-Max Verstappen           VER       3    155
-George Russell           RUS       4    136
-Charles Leclerc          LEC       5    104
-Lewis Hamilton           HAM       6     79
+Oscar Piastri            PIA       1    234
+Lando Norris             NOR       2    226
+Max Verstappen           VER       3    165
+George Russell           RUS       4    147
+Charles Leclerc          LEC       5    119
+Lewis Hamilton           HAM       6    103
 Kimi Antonelli           ANT       7     63
-Alexander Albon          ALB       8     42
-Esteban Ocon             OCO       9     22
-Isack Hadjar             HAD      10     21
-Nico Hülkenberg          HUL      11     20
-Lance Stroll             STR      12     14
-Carlos Sainz             SAI      13     13
-Pierre Gasly             GAS      14     11
-Yuki Tsunoda             TSU      15     10
-Fernando Alonso          ALO      16      8
-Oliver Bearman           BEA      17      6
-Liam Lawson              LAW      18      4
-Gabriel Bortoleto        BOR      19      0
+Alexander Albon          ALB       8     46
+Nico Hülkenberg          HUL       9     37
+Esteban Ocon             OCO      10     23
+Isack Hadjar             HAD      11     21
+Lance Stroll             STR      12     20
+Pierre Gasly             GAS      13     19
+Fernando Alonso          ALO      14     16
+Carlos Sainz             SAI      15     13
+Liam Lawson              LAW      16     12
+Yuki Tsunoda             TSU      17     10
+Oliver Bearman           BEA      18      6
+Gabriel Bortoleto        BOR      19      4
 Franco Colapinto         COL      20      0
 Jack Doohan              DOO      21      0
 
@@ -30,13 +30,13 @@ Jack Doohan              DOO      21      0
 
              posição pontos
 equipe                     
-McLaren            1    374
-Mercedes           2    199
-Ferrari            3    183
-Red Bull           4    162
-Williams           5     55
-Haas               6     28
-Racing Bulls       7     28
-Aston Martin       8     22
-Sauber             9     20
-Alpine            10     11
+McLaren            1    460
+Ferrari            2    222
+Mercedes           3    210
+Red Bull           4    172
+Williams           5     59
+Sauber             6     41
+Racing Bulls       7     36
+Aston Martin       8     36
+Haas               9     29
+Alpine            10     19
