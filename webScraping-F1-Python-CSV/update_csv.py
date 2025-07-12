@@ -5,8 +5,8 @@ import os
 df_racers_today, df_teams_today = web_scraping()
 
 def update_csv():
-    path_racers = "pontuacoes_pilotos.csv"
-    path_teams = "pontuacoes_equipes.csv"
+    path_racers = "webScraping-F1-Python-CSV\\pontuacoes_pilotos.csv"
+    path_teams = "webScraping-F1-Python-CSV\\pontuacoes_equipes.csv"
 
     # Atualiza pontuação dos pilotos
     if os.path.exists(path_racers):
@@ -23,4 +23,4 @@ def update_csv():
     else:
         merged_teams_df = df_teams_today
     merged_teams_df.to_csv(path_teams, index=False)
-
+update_csv()
