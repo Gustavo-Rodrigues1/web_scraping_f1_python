@@ -5,10 +5,8 @@ from selenium.webdriver.common.by import By
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from datetime import date
 import pandas as pd
 
-date_today = date.today()
 #função de webScraping para extrar dados da página
 def web_scraping ():
 #Endereço da página de classificação da Fórmula 1
@@ -88,6 +86,4 @@ def web_scraping ():
     #Retorna os dois dataframes
     df_racers = pd.DataFrame(racers)
     df_teams = pd.DataFrame(teams)
-    df_racers["data"] = date_today
-    df_teams["data"] = date_today
     return df_racers, df_teams
