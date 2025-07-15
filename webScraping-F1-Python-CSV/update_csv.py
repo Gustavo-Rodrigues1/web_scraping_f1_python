@@ -5,6 +5,7 @@ import os
 df_racers_today, df_teams_today = web_scraping()
 
 def update_csv():
+    #path com o nome e endereço dos arquivos
     path_racers = "webScraping-F1-Python-CSV\\pontuacoes_pilotos.csv"
     path_teams = "webScraping-F1-Python-CSV\\pontuacoes_equipes.csv"
 
