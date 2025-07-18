@@ -1,0 +1,30 @@
+name: Run F1 Bot Daily
+
+on:
+  schedule:
+    - cron: '0 12 * * *'  # Executa todos os dias às 12h UTC (9h no Brasil)
+  workflow_dispatch:       # Permite execução manual também
+
+jobs:
+  run-f1-bot:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout código
+      uses: actions/checkout@v3
+
+    - name: Configurar Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+
+    - name: Instalar dependências
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+
+    - name: Rodar script principal
+      env:
+        DISCORD_TOKEN: ${{ secrets.DISCORD_TOKEN }}
+        DISCORD_USER_ID: ${{ secrets.USER_ID }}
+      run: python discord_bot.py

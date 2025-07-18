@@ -1,8 +1,8 @@
 import pandas as pd
 import matplotlib.pyplot as plt
-
+import numpy as np
 #Leitura das informações dos arquivos CSV para um dataframe
-df_racers = pd.read_csv("webScraping-F1-Python-CSV\\pontuacoes_pilotos.csv")
+df_racers = pd.read_csv("webScraping-F1-Python-CSV\\data\\pontuacoes_pilotos.csv")
 # df_teams = pd.read_csv("webScraping-F1-Python-CSV\\pontuacoes_equipes.csv")
 
 #Garante que Round esteja em inteiro
@@ -76,20 +76,22 @@ def plot_subplot(ax, df, title):
         color = team_color.get(team, "gray")
         ax.plot(sorted_data["round"], sorted_data["pontos"], marker='o', label=racer_name, color=color)
         for x, y in zip(sorted_data["round"], sorted_data["pontos"]):
-            ax.text(x, y + 1, str(y), fontsize=7, ha='center', va='bottom', color=color)
-            last_row = sorted_data.iloc[-1]
-            abreviacao = last_row["abreviacao"]
-            ax.text(last_row["round"] + 0.1, last_row["pontos"], abreviacao,
+            ax.text(x, y + 0.7, str(y), fontsize=7, ha='center', va='bottom', color=color)
+        last_row = sorted_data.iloc[-1]
+        abreviacao = last_row["abreviacao"]
+        ax.text(last_row["round"] + 0.1, last_row["pontos"], abreviacao,
                 fontsize=9, fontweight='bold', color=color, va='center')
     ax.set_title(title, fontsize=12)
     ax.set_ylabel("Pontos acumulados", fontsize=12)
     ax.grid(True)
+    ax.legend(fontsize=8)
 
 # Gráficos
 plot_subplot(axs[0], df_top10, "Top 10 Primeiros Pilotos - Pontuação Acumulada")
 plot_subplot(axs[1], df_bottom10, "10 Últimos Pilotos - Pontuação Acumulada")
 axs[0].set_xlabel("GP", fontsize=12)
 axs[1].set_xlabel("GP", fontsize=12)
-plt.xticks(range(df_racers["round"].min(), df_racers["round"].max() + 1))
+axs[0].set_xticks(np.arange(df_racers["round"].min(), df_racers["round"].max() + 1))
+axs[1].set_xticks(np.arange(df_racers["round"].min(), df_racers["round"].max() + 1))
 plt.tight_layout()
-plt.savefig("webScraping-F1-Python-CSV\\pontuacoes_pilotos.png", dpi=300, bbox_inches='tight')
+plt.savefig("webScraping-F1-Python-CSV\\data\\pontuacoes_pilotos.png", dpi=300, bbox_inches='tight')
