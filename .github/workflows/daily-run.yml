@@ -28,5 +28,5 @@ jobs:
       working-directory: web-scraping-f1-python-csv
       env:
         DISCORD_TOKEN: ${{ secrets.DISCORD_TOKEN }}
-        DISCORD_USER_ID: ${{ secrets.USER_ID }}
+        USER_ID: ${{ secrets.USER_ID }}
       run: python discord_bot.py
