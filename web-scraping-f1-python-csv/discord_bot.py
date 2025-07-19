@@ -35,7 +35,10 @@ async def on_ready():
 
     try:
         await user.send("Olá! Aqui está o gráfico atualizado da F1 🏎️")
-        with open("web-scraping-f1-python-csv/data/pontuacoes_pilotos.png", "rb") as f:
+        
+        image_path = os.path.join(os.path.dirname(__file__), "data", "pontuacoes_pilotos.png")
+
+        with open(image_path, "rb") as f:
             await user.send(file=discord.File(f))
     except Exception as e:
         print(f"Erro ao enviar mensagem: {e}")
