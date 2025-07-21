@@ -1,0 +1,121 @@
+round,nome,posicao,pontos
+1,McLaren,1,27
+1,Mercedes,2,27
+1,Red Bull,3,18
+1,Williams,4,10
+1,Aston Martin,5,8
+1,Sauber,6,6
+1,Ferrari,7,5
+1,Alpine F1 Team,8,0
+1,RB F1 Team,9,0
+1,Haas F1 Team,10,0
+2,McLaren,1,78
+2,Mercedes,2,57
+2,Red Bull,3,36
+2,Williams,4,17
+2,Ferrari,5,17
+2,Haas F1 Team,6,14
+2,Aston Martin,7,10
+2,Sauber,8,6
+2,RB F1 Team,9,3
+2,Alpine F1 Team,10,0
+3,McLaren,1,111
+3,Mercedes,2,75
+3,Red Bull,3,61
+3,Ferrari,4,35
+3,Williams,5,19
+3,Haas F1 Team,6,15
+3,Aston Martin,7,10
+3,RB F1 Team,8,7
+3,Sauber,9,6
+3,Alpine F1 Team,10,0
+4,McLaren,1,151
+4,Mercedes,2,93
+4,Red Bull,3,71
+4,Ferrari,4,57
+4,Haas F1 Team,5,20
+4,Williams,6,19
+4,Aston Martin,7,10
+4,RB F1 Team,8,7
+4,Alpine F1 Team,9,6
+4,Sauber,10,6
+5,McLaren,1,188
+5,Mercedes,2,111
+5,Red Bull,3,89
+5,Ferrari,4,78
+5,Williams,5,25
+5,Haas F1 Team,6,20
+5,Aston Martin,7,10
+5,RB F1 Team,8,8
+5,Alpine F1 Team,9,6
+5,Sauber,10,6
+6,McLaren,1,246
+6,Mercedes,2,141
+6,Red Bull,3,105
+6,Ferrari,4,94
+6,Williams,5,37
+6,Haas F1 Team,6,20
+6,Aston Martin,7,14
+6,RB F1 Team,8,8
+6,Alpine F1 Team,9,7
+6,Sauber,10,6
+7,McLaren,1,279
+7,Mercedes,2,147
+7,Red Bull,3,131
+7,Ferrari,4,114
+7,Williams,5,51
+7,Haas F1 Team,6,20
+7,Aston Martin,7,14
+7,RB F1 Team,8,10
+7,Alpine F1 Team,9,7
+7,Sauber,10,6
+8,McLaren,1,319
+8,Mercedes,2,147
+8,Red Bull,3,143
+8,Ferrari,4,142
+8,Williams,5,54
+8,Haas F1 Team,6,26
+8,RB F1 Team,7,22
+8,Aston Martin,8,14
+8,Alpine F1 Team,9,7
+8,Sauber,10,6
+9,McLaren,1,362
+9,Ferrari,2,165
+9,Mercedes,3,159
+9,Red Bull,4,144
+9,Williams,5,54
+9,RB F1 Team,6,28
+9,Haas F1 Team,7,26
+9,Sauber,8,16
+9,Aston Martin,9,16
+9,Alpine F1 Team,10,11
+10,McLaren,1,374
+10,Mercedes,2,199
+10,Ferrari,3,183
+10,Red Bull,4,162
+10,Williams,5,55
+10,Haas F1 Team,6,28
+10,RB F1 Team,7,28
+10,Aston Martin,8,22
+10,Sauber,9,20
+10,Alpine F1 Team,10,11
+11,McLaren,1,417
+11,Ferrari,2,210
+11,Mercedes,3,209
+11,Red Bull,4,162
+11,Williams,5,55
+11,RB F1 Team,6,36
+11,Haas F1 Team,7,29
+11,Aston Martin,8,28
+11,Sauber,9,26
+11,Alpine F1 Team,10,11
+12,McLaren,1,460
+12,Ferrari,2,222
+12,Mercedes,3,210
+12,Red Bull,4,172
+12,Williams,5,59
+12,Sauber,6,41
+12,RB F1 Team,7,36
+12,Aston Martin,8,36
+12,Haas F1 Team,9,29
+12,Alpine F1 Team,10,19
