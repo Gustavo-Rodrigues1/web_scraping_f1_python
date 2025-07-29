@@ -37,7 +37,7 @@ Salva os dados em tempo real na nuvem com o Firebase Realtime Database.
 
 ## 🤖 Automatização com GitHub Actions
 
-O projeto está configurado com `daily_run.yml` para executar diariamente às 12h da tarde(horário de Brasília), realizando scraping, gerando o gráfico e enviando no Discord.
+O projeto está configurado com `daily_run.yml` para executar diariamente às 13h da tarde(horário de Brasília), realizando scraping, gerando o gráfico e enviando no Discord.
 
 ## 📊 Exemplos de Saída
 

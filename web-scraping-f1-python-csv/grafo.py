@@ -124,4 +124,4 @@ for ax in [ax1, ax2, ax3]:
     ax.set_xticks(np.arange(df_racers["round"].min(), df_racers["round"].max() + 1))
 
 plt.tight_layout()
-plt.savefig("web-scraping-f1-python-csv\\data\\pontuacoes_pilotos.png", dpi=300, bbox_inches='tight')
+plt.savefig("web-scraping-f1-python-csv\\data\\pontuacoes_pilotos_equipes.png", dpi=300, bbox_inches='tight')
