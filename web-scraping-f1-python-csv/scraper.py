@@ -8,7 +8,7 @@ from selenium.webdriver.support import expected_conditions as EC
 import pandas as pd
 
 #função de webScraping para extrar dados da página
-def web_scraping ():
+def web_scraping():
 #Endereço da página de classificação da Fórmula 1
     url = "https://www.espn.com.br/f1/classificacao"
     options = Options()
@@ -74,7 +74,7 @@ def web_scraping ():
             name = line.find_element(By.CSS_SELECTOR, "span.dn.show-mobile").text.strip()
 
             teams.append({
-                "equipe": name,
+                "nome": name,
                 "posicao": int(position),
                 "pontos": int(points),
             })

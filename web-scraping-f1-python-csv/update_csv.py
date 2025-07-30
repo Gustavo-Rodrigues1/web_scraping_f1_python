@@ -12,16 +12,30 @@ def update_csv():
     # Atualiza pontuação dos pilotos
     if os.path.exists(path_racers):
         old_racers_df = pd.read_csv(path_racers)
+
+        # Adiciona a coluna round incrementado mais 1 se a coluna ja existir para valores anteriores
+        max_round_racers = old_racers_df["round"].max() if "round" in old_racers_df.columns else 1
+        new_round_racers = max_round_racers + 1
+        df_racers_today["round"] = new_round_racers
         merged_racers_df = pd.concat([old_racers_df, df_racers_today], ignore_index=True)
     else:
+        # Adiciona a coluna round com o valor padrão 1
+        df_racers_today["round"] = 1
         merged_racers_df = df_racers_today
     merged_racers_df.to_csv(path_racers, index=False)
 
     # Atualiza pontuação das equipes
     if os.path.exists(path_teams):
         old_teams_df = pd.read_csv(path_teams)
+
+        # Adiciona a coluna round incrementado mais 1 se a coluna ja existir para valores anteriores
+        max_round_team = old_teams_df["round"].max() if "round" in old_teams_df.columns else 1
+        new_round_team = max_round_team + 1
+        df_teams_today["round"] = new_round_team
         merged_teams_df = pd.concat([old_teams_df, df_teams_today], ignore_index=True)
     else:
+        # Adiciona a coluna round com o valor padrão 1
+        df_teams_today["round"] = 1
         merged_teams_df = df_teams_today
     merged_teams_df.to_csv(path_teams, index=False)
 update_csv()
