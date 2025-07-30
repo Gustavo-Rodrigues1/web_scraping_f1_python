@@ -36,7 +36,7 @@ async def on_ready():
     try:
         await user.send("Olá! Aqui está o gráfico atualizado da F1 🏎️")
         
-        image_path = os.path.join(os.path.dirname(__file__), "data", "pontuacoes_pilotos.png")
+        image_path = os.path.join(os.path.dirname(__file__), "data", "pontuacoes_pilotos_equipes.png")
 
         with open(image_path, "rb") as f:
             await user.send(file=discord.File(f))
