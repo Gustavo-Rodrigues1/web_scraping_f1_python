@@ -29,4 +29,4 @@ jobs:
       env:
         DISCORD_TOKEN: ${{ secrets.DISCORD_TOKEN }}
         USER_ID: ${{ secrets.USER_ID }}
-      run: python discord_bot.py
+      run: python main.py

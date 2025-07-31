@@ -2,7 +2,7 @@ round,nome,abreviacao,posicao,pontos
 1,Lando Norris,NOR,1,25
 1,Max Verstappen,VER,2,18
 1,George Russell,RUS,3,15
-1,Andrea Kimi Antonelli,ANT,4,12
+1,Kimi Antonelli,ANT,4,12
 1,Alexander Albon,ALB,5,10
 1,Lance Stroll,STR,6,8
 1,Nico Hülkenberg,HUL,7,6
@@ -23,7 +23,7 @@ round,nome,abreviacao,posicao,pontos
 2,Max Verstappen,VER,2,36
 2,George Russell,RUS,3,35
 2,Oscar Piastri,PIA,4,34
-2,Andrea Kimi Antonelli,ANT,5,22
+2,Kimi Antonelli,ANT,5,22
 2,Alexander Albon,ALB,6,16
 2,Esteban Ocon,OCO,7,10
 2,Lance Stroll,STR,8,10
@@ -43,7 +43,7 @@ round,nome,abreviacao,posicao,pontos
 3,Max Verstappen,VER,2,61
 3,Oscar Piastri,PIA,3,49
 3,George Russell,RUS,4,45
-3,Andrea Kimi Antonelli,ANT,5,30
+3,Kimi Antonelli,ANT,5,30
 3,Charles Leclerc,LEC,6,20
 3,Alexander Albon,ALB,7,18
 3,Lewis Hamilton,HAM,8,15
@@ -64,7 +64,7 @@ round,nome,abreviacao,posicao,pontos
 4,Max Verstappen,VER,3,69
 4,George Russell,RUS,4,63
 4,Charles Leclerc,LEC,5,32
-4,Andrea Kimi Antonelli,ANT,6,30
+4,Kimi Antonelli,ANT,6,30
 4,Lewis Hamilton,HAM,7,25
 4,Alexander Albon,ALB,8,18
 4,Esteban Ocon,OCO,9,14
@@ -84,7 +84,7 @@ round,nome,abreviacao,posicao,pontos
 5,Max Verstappen,VER,3,87
 5,George Russell,RUS,4,73
 5,Charles Leclerc,LEC,5,47
-5,Andrea Kimi Antonelli,ANT,6,38
+5,Kimi Antonelli,ANT,6,38
 5,Lewis Hamilton,HAM,7,31
 5,Alexander Albon,ALB,8,20
 5,Esteban Ocon,OCO,9,14
@@ -104,7 +104,7 @@ round,nome,abreviacao,posicao,pontos
 6,Max Verstappen,VER,3,99
 6,George Russell,RUS,4,93
 6,Charles Leclerc,LEC,5,53
-6,Andrea Kimi Antonelli,ANT,6,48
+6,Kimi Antonelli,ANT,6,48
 6,Lewis Hamilton,HAM,7,41
 6,Alexander Albon,ALB,8,30
 6,Esteban Ocon,OCO,9,14
@@ -125,7 +125,7 @@ round,nome,abreviacao,posicao,pontos
 7,George Russell,RUS,4,99
 7,Charles Leclerc,LEC,5,61
 7,Lewis Hamilton,HAM,6,53
-7,Andrea Kimi Antonelli,ANT,7,48
+7,Kimi Antonelli,ANT,7,48
 7,Alexander Albon,ALB,8,40
 7,Esteban Ocon,OCO,9,14
 7,Lance Stroll,STR,10,14
@@ -146,7 +146,7 @@ round,nome,abreviacao,posicao,pontos
 8,George Russell,RUS,4,99
 8,Charles Leclerc,LEC,5,79
 8,Lewis Hamilton,HAM,6,63
-8,Andrea Kimi Antonelli,ANT,7,48
+8,Kimi Antonelli,ANT,7,48
 8,Alexander Albon,ALB,8,42
 8,Esteban Ocon,OCO,9,20
 8,Isack Hadjar,HAD,10,15
@@ -167,7 +167,7 @@ round,nome,abreviacao,posicao,pontos
 9,George Russell,RUS,4,111
 9,Charles Leclerc,LEC,5,94
 9,Lewis Hamilton,HAM,6,71
-9,Andrea Kimi Antonelli,ANT,7,48
+9,Kimi Antonelli,ANT,7,48
 9,Alexander Albon,ALB,8,42
 9,Isack Hadjar,HAD,9,21
 9,Esteban Ocon,OCO,10,20
@@ -188,7 +188,7 @@ round,nome,abreviacao,posicao,pontos
 10,George Russell,RUS,4,136
 10,Charles Leclerc,LEC,5,104
 10,Lewis Hamilton,HAM,6,79
-10,Andrea Kimi Antonelli,ANT,7,63
+10,Kimi Antonelli,ANT,7,63
 10,Alexander Albon,ALB,8,42
 10,Esteban Ocon,OCO,9,22
 10,Isack Hadjar,HAD,10,21
@@ -209,7 +209,7 @@ round,nome,abreviacao,posicao,pontos
 11,George Russell,RUS,4,146
 11,Charles Leclerc,LEC,5,119
 11,Lewis Hamilton,HAM,6,91
-11,Andrea Kimi Antonelli,ANT,7,63
+11,Kimi Antonelli,ANT,7,63
 11,Alexander Albon,ALB,8,42
 11,Esteban Ocon,OCO,9,23
 11,Nico Hülkenberg,HUL,10,22
@@ -230,7 +230,7 @@ round,nome,abreviacao,posicao,pontos
 12,George Russell,RUS,4,147
 12,Charles Leclerc,LEC,5,119
 12,Lewis Hamilton,HAM,6,103
-12,Andrea Kimi Antonelli,ANT,7,63
+12,Kimi Antonelli,ANT,7,63
 12,Alexander Albon,ALB,8,46
 12,Nico Hülkenberg,HUL,9,37
 12,Esteban Ocon,OCO,10,23
@@ -251,7 +251,7 @@ round,nome,abreviacao,posicao,pontos
 13,George Russell,RUS,4,157
 13,Charles Leclerc,LEC,5,139
 13,Lewis Hamilton,HAM,6,109
-13,Andrea Kimi Antonelli,ANT,7,63
+13,Kimi Antonelli,ANT,7,63
 13,Alexander Albon,ALB,8,54
 13,Nico Hülkenberg,HUL,9,37
 13,Esteban Ocon,OCO,10,27

@@ -1,18 +1,12 @@
-from scraper import web_scraping
 import pandas as pd
 import os
 
-df_racers_today, df_teams_today = web_scraping()
-
-def update_csv():
+def update_csv_racers(df_racers_today):
     #path com o nome e endereço dos arquivos
     path_racers = "web-scraping-F1-Python-CSV\\data\\pontuacoes_pilotos.csv"
-    path_teams = "web-scraping-F1-Python-CSV\\data\\pontuacoes_equipes.csv"
-
     # Atualiza pontuação dos pilotos
     if os.path.exists(path_racers):
         old_racers_df = pd.read_csv(path_racers)
-
         # Adiciona a coluna round incrementado mais 1 se a coluna ja existir para valores anteriores
         max_round_racers = old_racers_df["round"].max() if "round" in old_racers_df.columns else 1
         new_round_racers = max_round_racers + 1
@@ -24,10 +18,12 @@ def update_csv():
         merged_racers_df = df_racers_today
     merged_racers_df.to_csv(path_racers, index=False)
 
-    # Atualiza pontuação das equipes
+def update_csv_teams(df_teams_today):
+    #path com o nome e endereço dos arquivos
+    path_teams = "web-scraping-F1-Python-CSV\\data\\pontuacoes_equipes.csv"
+        # Atualiza pontuação das equipes
     if os.path.exists(path_teams):
         old_teams_df = pd.read_csv(path_teams)
-
         # Adiciona a coluna round incrementado mais 1 se a coluna ja existir para valores anteriores
         max_round_team = old_teams_df["round"].max() if "round" in old_teams_df.columns else 1
         new_round_team = max_round_team + 1
@@ -38,4 +34,3 @@ def update_csv():
         df_teams_today["round"] = 1
         merged_teams_df = df_teams_today
     merged_teams_df.to_csv(path_teams, index=False)
-update_csv()
