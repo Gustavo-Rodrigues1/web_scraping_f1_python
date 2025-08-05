@@ -40,7 +40,7 @@ def routine():
     # Comparação entre dados antigos e extraidos e os atualiza se forem diferentes
     if not teams_compare_result:
         uc.update_csv_teams(df_teams_today)
-    if racers_compare_result or teams_compare_result:
+    if not racers_compare_result or not teams_compare_result:
         gf.generate_plot()
         dm.discord_bot_dm()
 
