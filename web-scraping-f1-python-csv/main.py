@@ -5,10 +5,16 @@ import update_csv as uc
 import pandas as pd
 import os
 
-#Leitura das informações dos arquivos CSV para um dataframe
-base_path = "web-scraping-f1-python-csv"
-old_df_racers = pd.read_csv(os.path.join(base_path, "data", "pontuacoes_pilotos.csv"))
-old_df_teams = pd.read_csv(os.path.join(base_path, "data", "pontuacoes_equipes.csv"))
+# Caminho base dinâmico (raiz do repositório)
+base_path = os.path.dirname(os.path.abspath(__file__))
+
+# Caminhos completos
+racers_path = os.path.join(base_path, "data", "pontuacoes_pilotos.csv")
+teams_path = os.path.join(base_path, "data", "pontuacoes_equipes.csv")
+
+# Leitura
+old_df_racers = pd.read_csv(racers_path)
+old_df_teams = pd.read_csv(teams_path)
 
 #função para comparar dataframes de corredores
 def compare_racers (old_df_racers, df_racers_today):
