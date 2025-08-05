@@ -7,6 +7,7 @@ on:
 
 jobs:
   run-f1-bot:
+    if: github.ref == 'refs/heads/csv-incremental' 
     runs-on: ubuntu-latest
 
     steps:
