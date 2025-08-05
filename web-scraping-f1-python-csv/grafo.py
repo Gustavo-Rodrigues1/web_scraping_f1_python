@@ -6,9 +6,8 @@ import os
 
 def generate_plot():
     #Leitura das informações dos arquivos CSV para um dataframe
-    base_path = "web-scraping-f1-python-csv"
-    df_racers = pd.read_csv(os.path.join(base_path, "data", "pontuacoes_pilotos.csv"))
-    df_teams = pd.read_csv(os.path.join(base_path, "data", "pontuacoes_equipes.csv"))
+    df_racers = pd.read_csv(os.path.join("data", "pontuacoes_pilotos.csv"))
+    df_teams = pd.read_csv(os.path.join("data", "pontuacoes_equipes.csv"))
     
     #Garante que Round esteja em inteiro
     df_racers['round'] = df_racers['round'].astype(int)
