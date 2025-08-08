@@ -49,10 +49,11 @@ Gráficos gerados:
 
 ## 📌 To Do
 
-- [ ] Implementar a lógica para o gráfico de pontuação das equipes (em andamento)
-- [ ] Verificação antes do envio da mensagem do Bot, para mandar apenas quando ouver diferença entre os gráficos
+- [x] Implementar a lógica para o gráfico de pontuação das equipes (em andamento)
+- [x] Verificação antes do envio da mensagem do Bot, para mandar apenas quando ouver diferença entre os gráficos
+- [x] Refatorar
 - [ ] Finalizar versão SQLite
 - [ ] Finalizar versão Firebase
 - [x] Enviar imagens no Discord
-- [x] Automatizar com GitHub Actions
+- [ ] Automatizar com GitHub Actions
 - [ ] Adicionar testes unitários para scraping e gráficos
