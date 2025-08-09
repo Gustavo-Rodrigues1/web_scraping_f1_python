@@ -1,15 +1,10 @@
-import pandas as pd
+import pandas
 import matplotlib.pyplot as plt
 import matplotlib.gridspec as gridspec
 import numpy as np
 import os
 
-def generate_plot():
-    #Leitura das informações dos arquivos CSV para um dataframe
-    base_path = "web-scraping-f1-python-csv"
-    df_racers = pd.read_csv(os.path.join(base_path, "data", "pontuacoes_pilotos.csv"))
-    df_teams = pd.read_csv(os.path.join(base_path, "data", "pontuacoes_equipes.csv"))
-    
+def generate_plot(df_racers, df_teams):
     #Garante que Round esteja em inteiro
     df_racers['round'] = df_racers['round'].astype(int)
     
@@ -69,10 +64,7 @@ def generate_plot():
     df_top10 = df_racers[df_racers["nome"].isin(top_10)]
     df_bottom10 = df_racers[df_racers["nome"].isin(bottom_10)]
     
-    # Total de pontos finais por equipes
-    total_points_team = df_teams.groupby("nome")["pontos"].max().sort_values(ascending=False)
     # Criação dos subplots
-    
     fig = plt.figure(figsize=(20, 10))
     gs = gridspec.GridSpec(2, 2, height_ratios=[1, 1])
     
@@ -126,5 +118,7 @@ def generate_plot():
         ax.set_xticks(np.arange(df_racers["round"].min(), df_racers["round"].max() + 1))
     
     plt.tight_layout()
-    plt.savefig("web-scraping-f1-python-csv\\data\\pontuacoes_pilotos_equipes.png", dpi=300, bbox_inches='tight')
+    output_path = os.path.join("images", "pontuacoes_pilotos_equipes.png")
+    os.makedirs(os.path.dirname(output_path), exist_ok=True)
+    plt.savefig(output_path, dpi=300, bbox_inches='tight')
     

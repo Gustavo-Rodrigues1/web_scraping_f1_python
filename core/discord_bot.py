@@ -8,6 +8,7 @@ def discord_bot_dm():
     
     TOKEN = os.getenv("DISCORD_TOKEN")
     USER_ID = os.getenv("USER_ID")
+    print(TOKEN)
     
     # Verificação básica para garantir que USER_ID não está nulo
     if USER_ID is None:
@@ -37,7 +38,7 @@ def discord_bot_dm():
         try:
             await user.send("Olá! Aqui está o gráfico atualizado da F1 🏎️")
             
-            image_path = os.path.join(os.path.dirname(__file__), "data", "pontuacoes_pilotos_equipes.png")
+            image_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), "images", "pontuacoes_pilotos_equipes.png")
     
             with open(image_path, "rb") as f:
                 await user.send(file=discord.File(f))

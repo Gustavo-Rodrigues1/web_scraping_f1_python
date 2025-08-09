@@ -3,7 +3,7 @@ import os
 
 def update_csv_racers(df_racers_today):
     #path com o nome e endereço dos arquivos
-    path_racers = "web-scraping-F1-Python-CSV\\data\\pontuacoes_pilotos.csv"
+    path_racers = "web_scraping_f1_python_csv\\data\\pontuacoes_pilotos.csv"
     # Atualiza pontuação dos pilotos
     if os.path.exists(path_racers):
         old_racers_df = pd.read_csv(path_racers)
@@ -20,7 +20,7 @@ def update_csv_racers(df_racers_today):
 
 def update_csv_teams(df_teams_today):
     #path com o nome e endereço dos arquivos
-    path_teams = "web-scraping-F1-Python-CSV\\data\\pontuacoes_equipes.csv"
+    path_teams = "web_scraping_f1_python_csv\\data\\pontuacoes_equipes.csv"
         # Atualiza pontuação das equipes
     if os.path.exists(path_teams):
         old_teams_df = pd.read_csv(path_teams)
