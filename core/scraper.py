@@ -42,7 +42,7 @@ def web_scraping():
                 "nome": name,
                 "abreviacao": abreviation,
                 "posicao": int(position),
-                "pontos": int(points),
+                "pontos": float(points),
             })
 
         # pula linhas que não têm os elementos esperados
@@ -76,7 +76,7 @@ def web_scraping():
             teams.append({
                 "nome": name,
                 "posicao": int(position),
-                "pontos": int(points),
+                "pontos": float(points),
             })
         except Exception as error:
             print(f"Erro ao processar linha: {error}")
