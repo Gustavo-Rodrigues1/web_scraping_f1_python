@@ -1,10 +1,12 @@
 import pandas as pd
 import os
 
+base_path = os.path.dirname(os.path.abspath(__file__))
+
 def update_csv_racers(df_racers_today):
     #path com o nome e endereço dos arquivos
-    path_racers = "web_scraping_f1_python_csv\\data\\pontuacoes_pilotos.csv"
-    # Atualiza pontuação dos pilotos
+    path_racers = os.path.join(base_path, "data", "pontuacoes_pilotos.csv")
+        # Atualiza pontuação das equipes
     if os.path.exists(path_racers):
         old_racers_df = pd.read_csv(path_racers)
         # Adiciona a coluna round incrementado mais 1 se a coluna ja existir para valores anteriores
@@ -20,8 +22,7 @@ def update_csv_racers(df_racers_today):
 
 def update_csv_teams(df_teams_today):
     #path com o nome e endereço dos arquivos
-    path_teams = "web_scraping_f1_python_csv\\data\\pontuacoes_equipes.csv"
-        # Atualiza pontuação das equipes
+    path_teams = os.path.join(base_path, "data", "pontuacoes_equipes.csv")
     if os.path.exists(path_teams):
         old_teams_df = pd.read_csv(path_teams)
         # Adiciona a coluna round incrementado mais 1 se a coluna ja existir para valores anteriores
