@@ -1,13 +1,12 @@
 import sqlite3
-import pandas as pd
 import os
+import pandas as pd
 
 base_path = os.path.dirname(os.path.abspath(__file__))
-db_path = os.path.join(base_path, "data", "database_f1.db")
+db_path = os.path.join(base_path, "data", "databasef1.db")
 
-def update_sqlite_racers(df_racers_today):
-    conect = sqlite3.connect(db_path)
-    cursor = conect.cursor
+def update_sqlite_racers(df_racers_today, conect):
+    cursor = conect.cursor()
 
     # cria tabela se não existir
     cursor.execute("CREATE TABLE IF NOT EXISTS drivers (round INTEGER, nome TEXT, abreviacao TEXT, posicao INTEGER, pontos REAL)")
@@ -17,13 +16,12 @@ def update_sqlite_racers(df_racers_today):
     new_round = (max_round or 0) + 1;
     df_racers_today["round"] = new_round
     # insere os dados na tabela
-    df_racers_today.tosql("drivers", conect, if_exists="append",index=False)
-    cursor.commit()
+    df_racers_today.to_sql("drivers", conect, if_exists="append",index=False)
+    conect.commit()
     cursor.close()
 
-def update_sqlite_teams(df_teams_today):
-    conect = sqlite3.connect(db_path)
-    cursor = conect.cursor
+def update_sqlite_teams(df_teams_today, conect):
+    cursor = conect.cursor()
 
     # cria tabela se não existir
     cursor.execute("CREATE TABLE IF NOT EXISTS teams (round INTEGER, nome TEXT, abreviacao TEXT, posicao INTEGER, pontos REAL)")
@@ -33,6 +31,6 @@ def update_sqlite_teams(df_teams_today):
     new_round = (max_round or 0) + 1;
     df_teams_today["round"] = new_round
     # insere os dados na tabela
-    df_teams_today.tosql("teams", conect, if_exists="append",index=False)
-    cursor.commit()
+    df_teams_today.to_sql("teams", conect, if_exists="append",index=False)
+    conect.commit()
     cursor.close()
