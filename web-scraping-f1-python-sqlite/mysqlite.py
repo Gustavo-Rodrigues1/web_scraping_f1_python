@@ -1,6 +1,4 @@
-import sqlite3
 import os
-import pandas as pd
 
 base_path = os.path.dirname(os.path.abspath(__file__))
 db_path = os.path.join(base_path, "data", "databasef1.db")

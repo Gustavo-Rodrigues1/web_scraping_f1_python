@@ -5,10 +5,10 @@ Este projeto coleta dados atualizados sobre a Fórmula 1 por meio de scraping da
 ## 🔧 Tecnologias Utilizadas
 
 - Python 3.x
-- Selenium
-- Pandas
-- Matplotlib
-- Discord.py
+- Selenium (Para realizar o web scraping)
+- Pandas (Uso de dataframes)
+- Matplotlib (Criação de gráficos)
+- Discord.py (Bot do discord para enivar os dados)
 - GitHub Actions (automatização)
 - Versões alternativas de armazenamento: CSV, SQLite e Firebase
 
@@ -52,7 +52,7 @@ Gráficos gerados:
 - [x] Implementar a lógica para o gráfico de pontuação das equipes (em andamento)
 - [x] Verificação antes do envio da mensagem do Bot, para mandar apenas quando ouver diferença entre os gráficos
 - [x] Refatorar
-- [ ] Finalizar versão SQLite
+- [X] Finalizar versão SQLite
 - [ ] Finalizar versão Firebase
 - [x] Enviar imagens no Discord
 - [ ] Automatizar com GitHub Actions
