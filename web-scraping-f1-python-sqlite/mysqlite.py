@@ -1,11 +1,5 @@
-import os
-
-base_path = os.path.dirname(os.path.abspath(__file__))
-db_path = os.path.join(base_path, "data", "databasef1.db")
-
 def update_sqlite_racers(df_racers_today, conect):
     cursor = conect.cursor()
-
     # cria tabela se não existir
     cursor.execute("CREATE TABLE IF NOT EXISTS drivers (round INTEGER, nome TEXT, abreviacao TEXT, posicao INTEGER, pontos REAL)")
     # pega o round maximo
@@ -20,7 +14,6 @@ def update_sqlite_racers(df_racers_today, conect):
 
 def update_sqlite_teams(df_teams_today, conect):
     cursor = conect.cursor()
-
     # cria tabela se não existir
     cursor.execute("CREATE TABLE IF NOT EXISTS teams (round INTEGER, nome TEXT, abreviacao TEXT, posicao INTEGER, pontos REAL)")
     # pega o round maximo
